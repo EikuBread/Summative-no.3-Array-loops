@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Arrow extends Actor
 {
-    int AnimationInterval = 10;
+    int AnimationInterval = 7;
     int Fc = 0;
     GreenfootImage [] Arrow;
     /**
@@ -40,7 +40,7 @@ public class Arrow extends Actor
         for (int i = 0; i < Arrow.length; i++)
         {
             // Again, assuming the image files are tile0.png, tile1.png, etc.
-            String imagePath = "Images/Arrow" + i + ".png";
+            String imagePath = "Arrow/" + i + ".png";
             Arrow[i] = new GreenfootImage(imagePath);
             
             
