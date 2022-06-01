@@ -39,13 +39,34 @@ public class MyWorld extends World
         if(Greenfoot.isKeyDown("d"))
         {
             arrow.setLocation(arrow.getX()+5, 55);
+           if (arrow.getX() >=520) 
+      
+           {
+            
+            arrow.setLocation(520, 55);
+          
+           }
+            
         }
         
         if(Greenfoot.isKeyDown("a"))
         {
             arrow.setLocation(arrow.getX()-5, 55);
+            if (arrow.getX() <=79) 
+      
+            {
+          
+                arrow.setLocation(80, 55);
+          
         }
+        }
+        
+      
     }
+    
+    
+        
+    
     
     /**
      * Prepare the world for the start of the program.

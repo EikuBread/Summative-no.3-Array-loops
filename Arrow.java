@@ -21,38 +21,9 @@ public class Arrow extends Actor
     {
         LoadImages();
         animate(Arrow);
+        
     }  
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     void animate (GreenfootImage [] images)
     {
        if (Fc >= images.length * AnimationInterval) 
@@ -69,7 +40,7 @@ public class Arrow extends Actor
     
     
         void LoadImages()
-    {
+        {
         Arrow = new GreenfootImage[6];
         
         for (int i = 0; i < Arrow.length; i++)
