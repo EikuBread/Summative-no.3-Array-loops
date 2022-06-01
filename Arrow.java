@@ -8,9 +8,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Arrow extends Actor
 {
-    int AnimationInterval = 7;
+    int AnimationInterval = 9;
     int Fc = 0;
     GreenfootImage [] Arrow;
+    int deltaY =0;
+    int deltaX =0;
     /**
      * Act - do whatever the Arrow wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -19,7 +21,38 @@ public class Arrow extends Actor
     {
         LoadImages();
         animate(Arrow);
-    }    
+    }  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     void animate (GreenfootImage [] images)
     {
        if (Fc >= images.length * AnimationInterval) 
@@ -33,7 +66,9 @@ public class Arrow extends Actor
        Fc++;
     }
     
-    void LoadImages()
+    
+    
+        void LoadImages()
     {
         Arrow = new GreenfootImage[6];
         
