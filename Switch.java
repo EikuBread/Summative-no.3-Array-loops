@@ -8,18 +8,19 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Switch extends Actor
 {
-    boolean black = false;
+    boolean switchs = false;
     /**
      * Act - do whatever the Switch wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
-        if (black ==false)
+        
+        if (switchs ==false)
         {
             setImage("Switch/Greenswitch.png");  
         }
-        if (black ==true)
+        if (switchs ==true)
         {
             setImage("Switch/Redswitch.png");  
         }

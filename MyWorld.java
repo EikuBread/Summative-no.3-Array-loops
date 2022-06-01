@@ -10,7 +10,8 @@ public class MyWorld extends World
 {
     int dx = 0;
     Arrow arrow;
-
+    int mix = 85;
+    int max = 130;
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -19,6 +20,8 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 200, 1); 
+        int min = 80;
+        int max = 40;
 
         for (int i = 0; i < 6; i++)
         {
@@ -30,8 +33,6 @@ public class MyWorld extends World
 
         arrow= new Arrow();
         addObject(arrow, 80, 40);
-
-        prepare();
     }
 
     public void act()
@@ -46,7 +47,7 @@ public class MyWorld extends World
             arrow.setLocation(520, 55);
           
            }
-            
+           
         }
         
         if(Greenfoot.isKeyDown("a"))
@@ -56,23 +57,12 @@ public class MyWorld extends World
       
             {
           
-                arrow.setLocation(80, 55);
-          
-        }
+                    arrow.setLocation(80, 55);
+              
+            }
         }
         
       
     }
     
-    
-        
-    
-    
-    /**
-     * Prepare the world for the start of the program.
-     * That is: create the initial objects and add them to the world.
-     */
-    private void prepare()
-    {
-    }
 }
